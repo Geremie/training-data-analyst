@@ -6,6 +6,8 @@ import datetime
 import logging
 import os
 
+print("Forces build triggering")
+
 
 def to_csv(rowdict):
   # Pull columns from BQ and create a line
