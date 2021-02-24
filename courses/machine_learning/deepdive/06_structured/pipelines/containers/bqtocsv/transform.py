@@ -95,6 +95,8 @@ def preprocess(in_test_mode, PROJECT, BUCKET, start_year):
 
     if in_test_mode:
       query = query + ' LIMIT 100'
+    else:
+        query = query + ' LIMIT 10000'
 
     for step in ['train', 'eval']:
       if step == 'train':
